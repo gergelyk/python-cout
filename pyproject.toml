@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "cout"
+name = "stdcpp"
 version = "0.1.0"
 description = "cout & cerr like in C++"
 authors = ["Grzegorz Krason <grzegorz.krason@gmail.com>"]
 license = "MIT"
-repository = "https://github.com/gergelyk/python-cout"
+repository = "https://github.com/gergelyk/python-stdcpp"
 readme = "README.md"
 
 [tool.poetry.dependencies]
