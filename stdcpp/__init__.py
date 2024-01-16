@@ -99,13 +99,8 @@ class Cdbg:
             try:
                 val = gloloc[varname]
             except KeyError as exc:
-                cout << varname << " # Inaccessible" << endl
+                cerr << varname << " # Inaccessible" << endl
             else:
-                cout << varname << ": " << type(val).__name__ << " = " << repr(val) << endl
+                cerr << varname << ": " << type(val).__name__ << " = " << repr(val) << endl
      
 cdbg = Cdbg()
-
-x = 123
-y = 'foobar'
-
-cdbg << x << y

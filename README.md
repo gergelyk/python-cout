@@ -1,6 +1,6 @@
 # cout & cerr like in C++
 
-Usge:
+## Usge:
 
 ```py
 from stdcpp import cout, cerr, endl
@@ -9,7 +9,7 @@ cout << "Hello" << " " << "world!" << endl
 cerr << "Hello" << " " << "world!" << endl
 ```
 
-Bonus 1:
+## Bonus 1:
 
 ```py
 from stdcpp import Stream
@@ -22,7 +22,7 @@ with Stream('log.txt', 'a+') as s:
     s << "world!" << endl
 ```
 
-Bonus 2:
+## Bonus 2:
 
 ```py
 import io
@@ -35,7 +35,7 @@ ios.seek(0)
 cout << ios.read()
 ```
 
-Bonus 3:
+## Bonus 3:
 ```py
 from stdcpp import cdbg
 
@@ -43,4 +43,10 @@ x = 123
 y = 'foobar'
 
 cdbg << x << y
+```
+
+result:
+```
+x: int = 123
+y: str = 'foobar'
 ```
