@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "cout & cerr like in C++"
 authors = ["Grzegorz Krason <grzegorz.krason@gmail.com>"]
 license = "MIT"
+repository = "https://github.com/gergelyk/python-cout"
 readme = "README.md"
 
 [tool.poetry.dependencies]
