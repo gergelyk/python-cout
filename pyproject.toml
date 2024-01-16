@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "stdcpp"
-version = "0.3.0"
+version = "0.4.0"
 description = "cout & cerr like in C++"
 authors = ["Grzegorz Krason <grzegorz.krason@gmail.com>"]
 license = "MIT"
