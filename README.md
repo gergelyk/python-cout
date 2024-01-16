@@ -36,6 +36,15 @@ cout << ios.read()
 ```
 
 ## Bonus 3:
+
+```py
+from stdcpp import coutln, cerrln
+
+coutln << "Hello world!"
+cerrln << "Hello world!"
+```
+
+## Bonus 4:
 ```py
 from stdcpp import cdbg
 

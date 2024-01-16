@@ -28,6 +28,12 @@ class Stream:
     def close(self):
         self.fh.close()
 
+class StreamNl(Stream):
+    def __lshift__(self, other):
+        super().__lshift__(other)
+        super().__lshift__('\n')
+        return self
+
 class Endl(StreamHandler):
     def handle(self, stream):
         stream.fh.write('\n')
@@ -36,8 +42,9 @@ class Endl(StreamHandler):
 
 cout = Stream(sys.stdout)
 cerr = Stream(sys.stderr)
+coutln = StreamNl(sys.stdout)
+cerrln = StreamNl(sys.stderr)
 endl = Endl()
-
 
 class CdbgDummy:
     def __lshift__(self, other):
