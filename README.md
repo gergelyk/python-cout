@@ -34,3 +34,13 @@ s << "Hello world!" << endl
 ios.seek(0)
 cout << ios.read()
 ```
+
+Bonus 3:
+```py
+from stdcpp import cdbg
+
+x = 123
+y = 'foobar'
+
+cdbg << x << y
+```
